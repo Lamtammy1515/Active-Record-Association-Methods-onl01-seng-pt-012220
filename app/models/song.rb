@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     Song.find do |n|
-      n.genre 
+      n.genre.name
     end 
   end
 
